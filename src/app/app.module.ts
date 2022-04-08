@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { BaseModule } from './base/base.module';
 import { HederComponent } from './heder/heder.component';
 
 @NgModule({
@@ -10,7 +11,9 @@ import { HederComponent } from './heder/heder.component';
     HederComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BaseModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

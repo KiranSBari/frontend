@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HederComponent } from './heder/heder.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContainerComponent } from './container/container.component';
+import { CrmModule } from '../crm/crm.module';
 
 
 
@@ -13,7 +14,8 @@ import { ContainerComponent } from './container/container.component';
     ContainerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CrmModule
   ],
   exports:[
     ContainerComponent
