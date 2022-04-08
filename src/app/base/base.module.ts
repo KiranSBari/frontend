@@ -14,6 +14,9 @@ import { ContainerComponent } from './container/container.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ContainerComponent
   ]
 })
 export class BaseModule { }
