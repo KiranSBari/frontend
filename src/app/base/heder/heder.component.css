@@ -1,0 +1,22 @@
+.main{
+    background-color:#FF5733 ;
+    height: 150px;
+}
+
+h1{    
+    font-weight: bold;
+    color: #f3f3f5;
+}
+.kuchbhi{
+    position: relative;
+    display: inline;
+    float: left;
+   
+}
+
+.kuchto{
+    width: 50%;
+    text-align: right;
+    float: right;
+    padding-right: 1%;
+} 
