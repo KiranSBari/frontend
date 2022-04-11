@@ -7,11 +7,12 @@ import { CrmModule } from '../crm/crm.module';
 import { RouterModule, Routes } from '@angular/router';
 import { AllPoliciesComponent } from '../crm/policy/all-policies/all-policies.component';
 import { GetcomplaintComponent } from '../crm/complaint/getcomplaint/getcomplaint.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes:Routes=[
       
-  { path:'', redirectTo:'policies',pathMatch:'full'},
-  // { path:'home',component:HomeComponent},
+  { path:'', redirectTo:'home',pathMatch:'full'},
+  { path:'home',component:HomeComponent},
   { path:'policies',component:AllPoliciesComponent},
   { path:'complaints',component:GetcomplaintComponent},
 ];
@@ -20,7 +21,8 @@ export const routes:Routes=[
   declarations: [
     HederComponent,
     FooterComponent,
-    ContainerComponent
+    ContainerComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
