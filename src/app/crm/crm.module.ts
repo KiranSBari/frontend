@@ -16,7 +16,8 @@ import { PolicyinsertingComponent } from './policy/policyinserting/policyinserti
     FormsModule
   ],
   exports:[
-    AllPoliciesComponent
+    AllPoliciesComponent,
+    PolicyinsertingComponent
   ]
 
 })

@@ -8,27 +8,9 @@ import { PolicysericeService } from '../policyserice.service';
 })
 export class AllPoliciesComponent implements OnInit {
 
-//Policy declared
-Policy ={
-  policyID:'',
-  name:'',
-  description:'',
-  category:''
- }
-  constructor(private api:PolicysericeService) { }
+constructor() { }
 
-  insertPolicy(form:any):void{
-    console.log(this.Policy.policyID);
-    console.log(this.Policy.name);
-    console.log(this.Policy.description);
-    console.log(this.Policy.category);    
-    console.log(" I am call for priting data");    
-    this.api.insert(this.Policy);
-    
-  }
-
-
-  ngOnInit(): void {
+ ngOnInit(): void {
   }
 
 }
