@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AllPoliciesComponent } from './all-policies/all-policies.component';
 import { PolicyinsertingComponent } from './policyinserting/policyinserting.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -11,7 +12,11 @@ import { PolicyinsertingComponent } from './policyinserting/policyinserting.comp
     PolicyinsertingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
+  ],
+  exports:[
+    AllPoliciesComponent,
   ]
 })
 export class PolicyModule { }

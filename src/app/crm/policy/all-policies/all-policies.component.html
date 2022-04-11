@@ -1,1 +1,64 @@
-<p>all-policies works!</p>
+<div class="container-fluid">
+    <div>
+        <h3 style="text-align:left">Policies Form</h3><br>
+    </div>
+    <div class="main">
+        <!-- <form #insertForm="ngForm"
+              [ngSubmit]="insertPolicy(insertForm.value)">
+         -->
+        <form  #loginForm="ngForm"
+              (ngSubmit)="insertPolicy(loginForm.value)">
+            <table>
+                <tr>
+                    <td>
+                        <label>Policy Number:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="policyID" required [(ngModel)]="Policy.policyID">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label>Policy Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" required [(ngModel)]="Policy.name">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label>Policy Description:</label>
+                    </td>
+                    <td>
+                        <textarea rows="1"cols="21" name="Description" required [(ngModel)]="Policy.description"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Category:</label>
+                    </td>
+                    <td>
+                        <select type="text" name="name" id="name" required [(ngModel)]="Policy.category">
+                            <option value="">Select</option>
+                            <option value="Customer">Customer</option>
+                            <option value="Staff" >Staff</option>
+                            <option value="Product">Product</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" class="btn btn-primary active" name="submit" id="submit" value="Submit">
+                    </td>
+                    <td>
+                        <input type="submit" class="btn-default" name="cancel" id="cancel" value="Cancel">
+                    </td>
+                    
+                </tr>
+        </table>
+        </form>
+    </div>
+</div>

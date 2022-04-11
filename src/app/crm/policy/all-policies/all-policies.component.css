@@ -1,0 +1,21 @@
+table, th, td {
+    border: 0px solid black;
+    border-collapse: separate;
+    row-gap: 10px;
+    position: center;
+  }
+
+h3 {
+    text-shadow: 2px 2px 2px #CCCCCC;
+    font-size: 20px;
+}
+
+.main {
+    
+    margin: 1 auto;
+    border:1px solid aquamarine
+
+}
+form{
+    padding: 20px;
+}

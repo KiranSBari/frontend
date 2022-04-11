@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div>
+    <h3 style="text-align:center">Complaint Raising Form</h3><br>
+    </div>
+    <div class="main">
+        <form>
+    <div class="form-group">
+        <div class="row">
+        <div class="col-sm-2">
+    <label class="text-center">Enter Mail Id:</label>&nbsp;&nbsp;&nbsp;
+</div>
+    <div class="col-sm-4">
+    <input type="email" class="form-control" name="mailid" id="mailid"  required="true">
+    </div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-sm-2">
+    <label class="text-center">Complaint Category:</label>&nbsp;&nbsp;&nbsp;
+</div>
+    <div class="col-sm-4">
+        <select type="text" class="form-control" na me="compcategory" id="compid" required="true">
+            <option value="">Select Category</option>
+            <option value="Quality">Quality</option>
+            <option value="Service" >Service</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    </div>
+    <br>    
+        <div class="row">
+        <div class="col-sm-2">
+    <label class="text-center">Complaint Description:</label>&nbsp;&nbsp;&nbsp;
+</div>
+    <div class="col-sm-4">
+        <textarea class="form-control" rows="3" cols="50" name="compdesc" id="compdesc"  required="true"></textarea>
+    
+    </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-2"> Add Photo</div>
+        <div class="col-sm-4"><input type="file" name="complaintphoto" id="complaintphoto"></div>
+        
+    </div>
+    <br><br>
+<div class="row"> 
+    <div class="col-sm-2">
+</div>
+<div class="col-sm-2">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+    <input type="submit" class="btn btn-primary active" name="submit" id="submit" value="Raise">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" class="btn-default" name="cancel" id="cancel" value="Cancel">
+    </div>
+</div>
+
+    </div>
+    </form>
+</div>
+</div>
