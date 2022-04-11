@@ -10,12 +10,12 @@ import { GetcomplaintComponent } from '../crm/complaint/getcomplaint/getcomplain
 import { HomeComponent } from './home/home.component';
 
 export const routes:Routes=[
-      
-  { path:'', redirectTo:'home',pathMatch:'full'},
+  { path:'',redirectTo:'home',pathMatch:'full'},
   { path:'home',component:HomeComponent},
   { path:'policies',component:AllPoliciesComponent},
   { path:'complaints',component:GetcomplaintComponent},
 ];
+
 
 @NgModule({
   declarations: [
