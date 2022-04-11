@@ -18,7 +18,10 @@ export class PolicysericeService {
       "description": Policy.description,
       "category": Policy.category
     }
-    return this.http.post<any>(url, new_policy);
+    console.log("In API call")
+    var res=this.http.get<any>(url);
+    console.log(res);
+    return res;
   }
 }
 
