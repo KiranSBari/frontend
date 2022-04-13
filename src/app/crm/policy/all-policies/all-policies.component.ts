@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { PolicysericeService } from '../policyserice.service';
 
@@ -8,9 +9,15 @@ import { PolicysericeService } from '../policyserice.service';
 })
 export class AllPoliciesComponent implements OnInit {
 
-constructor() { }
+constructor(private api:PolicysericeService) { }
 
  ngOnInit(): void {
+  }
+ 
+  getallpolicies(){
+    this.api.getall().subscribe((data)=>{
+      console.log("Data: "+data);
+    })
   }
 
 }

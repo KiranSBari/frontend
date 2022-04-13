@@ -8,19 +8,23 @@ import { Observable } from 'rxjs';
 export class PolicysericeService {
 
   constructor(private http: HttpClient) { }
+  url = "http://localhost:3000/api/policy";
+  getall():Observable<any>{
+    return this.http.get<any>(this.url);
+  }
 
   insert(Policy: { policyID: string; name: string; description: string; category: string; }): Observable<any> {
 
-    let url = "http://localhost:3000/api/policy";
+    
     let new_policy = {
       "policyID": Policy.policyID,
-      "name": Policy.name,
+      "polName": Policy.name,
       "description": Policy.description,
       "category": Policy.category
     }
     console.log("In API call")
-    var res=this.http.get<any>(url);
-    console.log(res);
+    var res=this.http.post<any>(this.url,new_policy);
+    //console.log(res);
     return res;
   }
 }
