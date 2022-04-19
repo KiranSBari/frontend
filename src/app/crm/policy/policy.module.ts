@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { AllPoliciesComponent } from './all-policies/all-policies.component';
 import { PolicyinsertingComponent } from './policyinserting/policyinserting.component';
 import { FormsModule } from '@angular/forms';
-import { AlertmessageComponent } from './policyinserting/alertmessage/alertmessage.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule, Routes } from '@angular/router';
+
 
 export const routes:Routes=[
   { path:'policies',component:AllPoliciesComponent},
@@ -16,7 +16,6 @@ export const routes:Routes=[
   declarations: [
     AllPoliciesComponent,
     PolicyinsertingComponent,
-    AlertmessageComponent
   ],
   imports: [
     CommonModule,
@@ -29,3 +28,6 @@ export const routes:Routes=[
   ]
 })
 export class PolicyModule { }
+
+
+

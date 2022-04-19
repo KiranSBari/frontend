@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { AllPoliciesComponent } from './policy/all-policies/all-policies.component';
 import { PolicyinsertingComponent } from './policy/policyinserting/policyinserting.component';
 import { RouterModule, Routes } from '@angular/router';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+
 
 export const routes:Routes=[
   { path:'policies',component:AllPoliciesComponent},
@@ -19,6 +21,8 @@ export const routes:Routes=[
   imports: [
     CommonModule,
     FormsModule,
+  
+    MatDialogModule,
     RouterModule.forRoot(routes)
   ],
   exports:[

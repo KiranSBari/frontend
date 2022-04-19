@@ -13,7 +13,7 @@ import { AllPoliciesComponent } from '../crm/policy/all-policies/all-policies.co
 export const routes:Routes=[
   { path:'',redirectTo:'home',pathMatch:'full'},
   { path:'home',component:HomeComponent},
-  { path:'policies',component:AllPoliciesComponent,children:[{path:'insertpolicy',component:PolicyinsertingComponent}]},
+  { path:'policies',component:AllPoliciesComponent},
   { path:'complaints',component:GetcomplaintComponent},
 ];
 
@@ -35,6 +35,3 @@ export const routes:Routes=[
   ]
 })
 export class BaseModule { }
-
-
-

@@ -11,13 +11,15 @@ export class AllPoliciesComponent implements OnInit {
 
 constructor(private api:PolicysericeService) { }
 
+public policies:any []|undefined;
+public policy:any|undefined;
+
  ngOnInit(): void {
-  }
- 
-  getallpolicies(){
+  
     this.api.getall().subscribe((data)=>{
+      this.policies=data;
       console.log("Data: "+data);
     })
-  }
+ }
 
 }

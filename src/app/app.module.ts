@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BaseModule } from './base/base.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BaseModule,
     FormsModule,
     HttpClientModule,
+    
+    MatDialogModule,
     BrowserAnimationsModule
   ],
   providers: [],

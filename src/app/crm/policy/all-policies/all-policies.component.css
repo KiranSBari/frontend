@@ -1,9 +1,12 @@
 table, th, td {
-    border: 0px solid black;
-    border-collapse: separate;
+    border: 1px solid black;
+    border-collapse: separate; 
+    padding: 10px;
     row-gap: 10px;
     position: center;
-  }
+    margin-left: auto;
+    margin-right: auto;
+ }
 
 h3 {
     text-shadow: 2px 2px 2px #CCCCCC;
@@ -15,7 +18,4 @@ h3 {
     margin: 1 auto;
     border:1px solid aquamarine
 
-}
-form{
-    padding: 20px;
 }

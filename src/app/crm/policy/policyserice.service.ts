@@ -9,13 +9,13 @@ export class PolicysericeService {
 
   constructor(private http: HttpClient) { }
   url = "http://localhost:3000/api/policy";
-  getall():Observable<any>{
+   getall():Observable<any>{
     return this.http.get<any>(this.url);
   }
+  delete(policyID:String){
 
+  }
   insert(Policy: { policyID: string; name: string; description: string; category: string; }): Observable<any> {
-
-    
     let new_policy = {
       "policyID": Policy.policyID,
       "polName": Policy.name,
